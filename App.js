@@ -23,6 +23,10 @@ export default class AdvancedTabsExample extends Component {
       
       <Container>
         <Header hasTabs/>
+        <TouchableOpacity>
+        <Button><Icon name="menu" /></Button>
+        onPress={{this:navigation.navigate("Drawer")}}
+        </TouchableOpacity>
         <Tabs>
           <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
           <Tab1/>        

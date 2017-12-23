@@ -1,22 +1,24 @@
 
 import React, { Component } from 'react';
-import { Container, Header, Button, Left, Icon } from 'native-base';
+
 import { Drawer } from 'react-navigation';
-import SideBar from '../Menu/SideBar';
+
+import { closeDrawer, openDrawer } from 'react-drawer';
+
+import { SideBar } from '../Menu/SideBar';
+
 export default class DrawerExample extends Component {
   render() {
     closeDrawer = () => {
-      this.drawer._root.close()
+      this.drawer.root.close();
     };
     openDrawer = () => {
-      this.drawer._root.open()
+      this.drawer.root.open();
     };
     return (
-      <Drawer
-        ref={(ref) => { this.drawer = ref; }}
-        content={<SideBar navigator={this.navigator} />}
-        onClose={() => this.closeDrawer()} >
-      // Main View
+      <Drawer>
+      ref={(ref) => { this.drawer = ref; }}content={<SideBar navigator={this.navigator} />}
+      onClose={() => this.closeDrawer()}
       </Drawer>
     );
     }
