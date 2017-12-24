@@ -5,15 +5,11 @@ import { Stylesheet, Image } from 'react-native';
 
 import { Container, Header, Title, Button, Left,  Tab, Tabs, TabHeading, Icon } from 'native-base';
 
-import { navigate, navigation } from 'react-navigation';
-
 import Tab1 from './Tabs/HomeTabs/tabOne';
 
 import Tab2 from './Tabs/HomeTabs/tabTwo';
 
 import Drawer from './Navigate/Drawer';
-
-import Section from './Tabs/HomeTabs/Button/buttonOne';
 
 export default class AdvancedTabsExample extends Component {
   
@@ -21,14 +17,8 @@ export default class AdvancedTabsExample extends Component {
 
     return (
       
-      <Container>
-        <Header hasTabs/>
-         <TouchableOpacity>
-           <Button>
-             <Icon name="menu" />
-             onPress={{this:props.navigation.navigate("Drawer")}}
-           </Button>
-         </TouchableOpacity>
+    <Container>
+      <Header hasTabs>
         <Tabs>
           <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
           <Tab1/>        
@@ -41,7 +31,8 @@ export default class AdvancedTabsExample extends Component {
           <Tab heading={ <TabHeading><Icon name="mail" /></TabHeading>}>
           </Tab>
         </Tabs>
-      </Container>
+      </Header>
+    </Container>
     );
   }
 }

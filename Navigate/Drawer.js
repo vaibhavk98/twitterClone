@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 
 import { Drawer } from 'react-navigation';
 
-import { closeDrawer, openDrawer } from 'react-drawer';
-
 import { SideBar } from '../Menu/SideBar';
 
 export default class DrawerExample extends Component {
