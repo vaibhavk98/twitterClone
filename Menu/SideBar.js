@@ -36,7 +36,7 @@ export default class SideBar extends Component {
                     Following
                     </Text>    
                     </Text>
-                <List style={{borderTopWidth:0.7,marginTop:15,borderTopColor:"gray"}}>
+                    <List style={{borderTopWidth:0.7,marginTop:15,borderTopColor:"gray"}}>
                                 <ListItem icon button noBorder style={{marginBottom:8}}>
                                 <Left>
                                 <Icon name="ios-person" style={styles.isize}/>

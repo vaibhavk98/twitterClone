@@ -23,10 +23,10 @@ export default class AdvancedTabsExample extends Component {
       
       <Container>
         <Header hasTabs/>
-        <TouchableOpacity>
-        <Button><Icon name="menu" /></Button>
-        onPress={{this:props.navigation.navigate("Drawer")}}
-        </TouchableOpacity>
+         <TouchableOpacity>
+           <Button><Icon name="menu" /></Button>
+           onPress={{this:props.navigation.navigate("Drawer")}}
+         </TouchableOpacity>
         <Tabs>
           <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
           <Tab1/>        
