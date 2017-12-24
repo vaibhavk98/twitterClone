@@ -11,13 +11,15 @@ import Tab2 from './Tabs/HomeTabs/tabTwo';
 
 import Drawer from './Navigate/Drawer';
 
+import Button from './Tabs/HomeTabs/Button/buttonOne';
+
 export default class AdvancedTabsExample extends Component {
   
   render() {
 
     return (
       
-    <Container>
+    <Container> 
       <Header hasTabs>
         <Tabs>
           <Tab heading={ <TabHeading><Icon name="home" /></TabHeading>}>
