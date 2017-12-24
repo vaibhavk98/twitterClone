@@ -8,13 +8,13 @@ import { closeDrawer, openDrawer } from 'react-drawer';
 import { SideBar } from '../Menu/SideBar';
 
 export default class DrawerExample extends Component {
-  render() {
-    closeDrawer = () => {
-      this.drawer.root.close();
-    };
-    openDrawer = () => {
-      this.drawer.root.open();
-    };
+  render(closeDrawer = () => {
+    this.drawer.root.close();
+  },
+  openDrawer = () => {
+    this.drawer.root.open();
+  },) {
+    
     return (
       <Drawer>
       ref={(ref) => { this.drawer = ref; }}content={<SideBar navigator={this.navigator} />}
