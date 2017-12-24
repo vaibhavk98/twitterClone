@@ -13,7 +13,7 @@ import Tab2 from './Tabs/HomeTabs/tabTwo';
 
 import Drawer from './Navigate/Drawer';
 
-import Section from './Button/buttonOne';
+import Section from './Tabs/HomeTabs/Button/buttonOne';
 
 export default class AdvancedTabsExample extends Component {
   
