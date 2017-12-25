@@ -11,7 +11,7 @@ return (
   
 <Container>
   
-  <Header searchBar rounded>
+  <Header searchBar round>
 
     <Item>
 

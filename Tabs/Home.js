@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import { Stylesheet, Image } from 'react-native';
 
-import { Container, Header, View, Title, Button, Left,  Tab, Tabs, TabHeading, Icon } from 'native-base';
+import { Container, Content, Footer, FooterTab, Text,  Header, View, Title, Button, Left,  Tab, Tabs, TabHeading, Icon } from 'native-base';
 
 
 import Tab1 from './HomeTabs/tabOne';
@@ -33,6 +33,16 @@ export default class AdvancedTabsExample extends Component {
           <Tab heading={ <TabHeading><Icon name="mail" /></TabHeading>}>
           </Tab>
         </Tabs>
+        <Footer>
+          <FooterTab>
+            <Button light>
+              <Text>All</Text>
+            </Button>
+            <Button light>
+              <Text>Mention</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
     </Container>
     );
   }
