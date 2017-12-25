@@ -11,8 +11,8 @@ export default class SideBar extends Component {
             };   
         }
         render(){
-            let folowers= `22`;
-            let folowing= `46`;
+            let folowers= ` 22 `;
+            let folowing= ` 46 `;
             return(
                 <Container style={{marginTop:25}}>
                     <Content>

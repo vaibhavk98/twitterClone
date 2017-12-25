@@ -6,7 +6,6 @@ export default class CardImageExample extends Component {
   render() {
     return (
       <Container>
-        <Header><Text>Home</Text></Header>
         <Content>
           <Card>
             <CardItem>
@@ -25,13 +24,25 @@ export default class CardImageExample extends Component {
               <Left>
                 <Button transparent>
                   <Icon active name="thumbs-up" />
-                  <Text>123 Likes</Text>
+                  <Text> 123 </Text>
                 </Button>
               </Left>
               <Body>
                 <Button transparent>
+                <Icon active name="heart" />
+                <Text> 40 </Text>
+                </Button>
+                </Body>
+              <Body>
+                <Button transparent>
                   <Icon active name="chatbubbles" />
-                  <Text>56 Comments</Text>
+                  <Text> 56 </Text>
+                </Button>
+                </Body>
+                <Body>
+                <Button transparent>
+                <Icon active name="mail" />
+                <Text> 22 </Text>
                 </Button>
               </Body>
               <Right>
