@@ -13,7 +13,7 @@ const App = DrawerNavigator(
       },
       SideBarScreen:{
         screen: SideBar,
-        path:"/side"
+        path:"/side",
       },
     },
     {

@@ -1,6 +1,8 @@
 
 import React, { Component } from 'react';
 
+import { StyleSheet, ScrollView, Image } from 'react-native';
+
 import {Container, Header, Item, Icon, Input, Button, Text} from 'native-base';
 
  export default class SearchBar extends Component {
@@ -11,37 +13,25 @@ return (
   
 <Container>
   
-  <Header searchBar round>
+  <Header searchBar style={styles.footer}>
 
-    <Item>
+    <Item rounded>
 
-      <Icon name="ios-search" />
+      <Icon name="ios-arrow-dropleft" style={styles.ficon}/>
 
-      <Input placeholder="Search Twitter" />
+      <Input placeholder="   Search Twitter" />
 
       <Icon name="ios-people" />
 
     </Item>
-
+       
     <Button transparent>
 
       <Text>Search Twitter</Text>
-
-    </Button>
-
-    <Header>
-
-    <Button iconLeft light>
-
-    <Icon name='arrow-back'/>
-
-    <Text>Back</Text>
-
+      
     </Button>
 
     </Header>
-
-  </Header>
 
 </Container>
 
@@ -49,3 +39,15 @@ return (
    );}
     
 }
+const styles= StyleSheet.create(
+  {
+  footer:{
+    backgroundColor:"white",
+    borderColor:"gray",
+    borderTopWidth:0.5, 
+  },
+  ficon:{
+    color:"#2196F3",
+  }
+  }
+);
